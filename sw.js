@@ -1,5 +1,5 @@
 /* Service Worker — يخزّن التطبيق بالكامل ليعمل دون إنترنت */
-const CACHE_NAME = "wasaya-rasoukh-v2";
+const CACHE_NAME = "wasaya-rasoukh-v3";
 
 const ASSETS = [
   "./",
