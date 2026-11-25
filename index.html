@@ -2,17 +2,16 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>صياغة الوصيّة الشرعية | مشروع رسوخ - مدرسة أبي سالم - العطف تجنينت</title>
-  <meta name="description" content="دورة تكوينية تطبيقية تفاعلية في صياغة الوصية الشرعية: الأحكام والمقاصد، الكفارات، الحقوق والالتزامات، الوكيل، مع صانع وصية جاهز للطباعة والتحميل. يعمل دون إنترنت.">
-  <meta name="keywords" content="الوصية الشرعية, المواريث, الكفارات, الحقوق والالتزامات, الوكيل, مشروع رسوخ, مدرسة أبي سالم, العطف تجنينت, حاج امحمد قاسم">
-  <meta name="theme-color" content="#0f5c4e">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>إطلالات على فقه التركات | مشروع رسوخ — مدرسة أبي سالم تجنيت</title>
+  <meta name="description" content="تطبيق تكويني تفاعلي يعمل دون إنترنت في فقه الوصايا والمواريث وتصفية التركات: أحكام ومقاصد، كفارات، حقوق والتزامات، وكيل الوصية، مدخل المواريث، حاسبة التركات، وصانع وصية نموذجية مع شهادة تخرج.">
+  <meta name="keywords" content="فقه التركات, الوصية الشرعية, المواريث, تصفية التركات, الكفارات, مشروع رسوخ, مدرسة أبي سالم تجنيت, ح قاسم بن ح عمر حاج امحمد">
+  <meta name="theme-color" content="#0d5548">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="الوصية الشرعية">
-  <meta name="application-name" content="الوصية الشرعية">
-  <meta name="msapplication-TileColor" content="#0f5c4e">
-  <meta name="msapplication-TileImage" content="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="فقه التركات">
+  <meta name="application-name" content="فقه التركات — رسوخ">
+  <meta name="msapplication-TileColor" content="#0d5548">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
@@ -23,640 +22,621 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+  <div class="bg-decor" aria-hidden="true"><span></span><span></span><span></span></div>
 
-<div class="bg-decor" aria-hidden="true"><span></span><span></span><span></span></div>
-
-<!-- ============ الشريط العلوي ============ -->
-<header class="topbar">
-  <div class="brand">
-    <button class="icon-btn menu-btn" id="menuBtn" aria-label="فتح القائمة" title="القائمة">☰</button>
-    <div class="brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 48 48"><path d="M24 3 41 10v13c0 11-7 18-17 22C14 41 7 34 7 23V10z" fill="currentColor" opacity=".18"/><path d="M24 3 41 10v13c0 11-7 18-17 22C14 41 7 34 7 23V10z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 18h16M16 24h16M16 30h10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="33" cy="30" r="5" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+  <!-- ============ الشريط العلوي ============ -->
+  <header class="topbar">
+    <div class="brand">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="فتح القائمة" title="القائمة">☰</button>
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48">
+          <path d="M24 3 41 10v13c0 11-7 18-17 22C14 41 7 34 7 23V10z" fill="currentColor" opacity=".16"/>
+          <path d="M24 3 41 10v13c0 11-7 18-17 22C14 41 7 34 7 23V10z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M15 17h18M15 24h18M15 31h11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="32" cy="31" r="5.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <strong>إطلالات على فقه التركات</strong>
+        <span>مشروع رسوخ · مدرسة أبي سالم تجنيت</span>
+      </div>
     </div>
-    <div class="brand-text">
-      <strong>صياغة الوصيّة الشرعية</strong>
-      <span>مشروع رسوخ - مدرسة أبي سالم - العطف تجنينت</span>
+    <div class="top-actions">
+      <span class="net-pill" id="netPill" title="حالة الاتصال"><i></i><span>متصل</span></span>
+      <button class="icon-btn" id="themeBtn" aria-label="تبديل الوضع الليلي" title="الوضع الليلي">🌙</button>
+      <button class="icon-btn" id="printBtn" aria-label="طباعة الصفحة" title="طباعة">🖨️</button>
+      <button class="install-btn" id="installBtn" hidden title="تثبيت التطبيق">⬇️ تثبيت</button>
     </div>
-  </div>
-  <div class="top-actions">
-    <span class="net-pill" id="netPill" title="حالة الاتصال"><i></i><span>متصل</span></span>
-    <button class="icon-btn" id="themeBtn" aria-label="تبديل الوضع الليلي" title="الوضع الليلي">🌙</button>
-    <button class="icon-btn" id="printBtn" aria-label="طباعة الصفحة" title="طباعة">🖨️</button>
-    <button class="install-btn" id="installBtn" hidden title="تثبيت التطبيق">⬇️ تثبيت</button>
-  </div>
-</header>
+  </header>
 
-<div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
 
-<div class="layout">
-  <!-- ============ القائمة الجانبية ============ -->
-  <aside class="sidebar" id="sidebar" aria-label="قائمة التنقل الرئيسية">
-    <div class="side-progress">
-      <div class="side-progress-top"><span>تقدّم التكوين</span><strong id="sidePct">0%</strong></div>
-      <div class="progress-track"><div class="progress-fill" id="sideBar"></div></div>
-      <small id="sideHint">أنه المحاور الستة لتكتمل مسار التكوين</small>
-    </div>
-
-    <div class="nav-label">الدورة التكوينية</div>
-    <button class="nav-item active" data-page="home"><span class="nav-ico">🏠</span><span>الرئيسية</span></button>
-    <button class="nav-item" data-page="concept"><span class="nav-ico">📖</span><span>المدخل التصوري</span></button>
-    <button class="nav-item" data-page="rules"><span class="nav-ico">⚖️</span><span>الأحكام والمقاصد</span></button>
-    <button class="nav-item" data-page="kaffarat"><span class="nav-ico">🕊️</span><span>الكفّارات</span></button>
-    <button class="nav-item" data-page="rights"><span class="nav-ico">📜</span><span>الحقوق والالتزامات</span></button>
-    <button class="nav-item" data-page="agent"><span class="nav-ico">🤝</span><span>الوكيل وأهليته</span></button>
-
-    <div class="nav-label">تطبيق عملي</div>
-    <button class="nav-item nav-special" data-page="builder"><span class="nav-ico">✍️</span><span>صانع الوصيّة</span><em>جديد</em></button>
-    <button class="nav-item" data-page="quiz"><span class="nav-ico">🧠</span><span>اختبار المعرفة</span></button>
-    <button class="nav-item" data-page="glossary"><span class="nav-ico">🔍</span><span>معجم المصطلحات</span></button>
-    <button class="nav-item" data-page="about"><span class="nav-ico">ⓘ</span><span>عن الدورة والمصادر</span></button>
-
-    <div class="side-note">
-      <strong>تنبيه شرعي</strong>
-      هذا التطبيق مادة تعليمية، وليس فتوى. راجع عالماً ثقة، ووثّق الوصية وفق القانون المحلي.
-    </div>
-  </aside>
-
-  <main class="main" id="main">
-
-    <!-- ================= الرئيسية ================= -->
-    <section class="page active" id="home">
-      <div class="hero">
-        <div class="hero-copy">
-          <span class="hero-tag">✦ دورة تطبيقية · مشروع رسوخ</span>
-          <h1>كيف تصوغ <span>وصيّتك الشرعية</span>؟</h1>
-          <p class="hero-sub">وفق الأحكام والمقاصد الشرعية، وتحفظ حقوقك والتزاماتك المالية والشخصية.</p>
-          <div class="hero-presenter">
-            <span class="avatar">ق</span>
-            <div><small>تقديم الأستاذ</small><strong>حاج امحمد قاسم</strong></div>
-          </div>
-          <div class="hero-actions">
-            <button class="btn btn-primary" data-go="builder">✍️ صُغ وصيّتك الآن</button>
-            <button class="btn btn-ghost" data-go="concept">ابدأ التكوين ←</button>
-          </div>
-          <div class="hero-chips">
-            <span>٦ محاور</span><span>تطبيق عملي</span><span>نموذج للملأ</span><span>يعمل دون إنترنت</span>
-          </div>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 400 360">
-            <defs>
-              <linearGradient id="paperG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8f4ef"/></linearGradient>
-              <linearGradient id="greenG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#31a78d"/><stop offset="1" stop-color="#0f5c4e"/></linearGradient>
-            </defs>
-            <circle cx="200" cy="180" r="160" fill="rgba(255,255,255,.09)"/>
-            <circle cx="200" cy="180" r="124" fill="rgba(255,255,255,.07)"/>
-            <g transform="rotate(-6 200 180)">
-              <rect x="104" y="74" width="192" height="232" rx="14" fill="url(#paperG)" stroke="#c8a45d" stroke-width="2"/>
-              <path d="M200 74v232" stroke="#cbdcd6" stroke-width="2"/>
-              <path d="M126 112h58M126 130h58M126 148h44M216 112h58M216 130h58M216 148h44" stroke="#9ab9af" stroke-width="4" stroke-linecap="round"/>
-              <path d="M126 184h148M126 202h148M126 220h110M126 238h148" stroke="#d8e6e1" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="144" cy="278" r="17" fill="none" stroke="#c8a45d" stroke-width="2.5"/>
-              <path d="M136 278l6 6 12-13" fill="none" stroke="#0f5c4e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-            <g transform="rotate(24 300 246)">
-              <rect x="288" y="150" width="14" height="122" rx="7" fill="url(#greenG)"/>
-              <path d="M288 272l7 26 7-26z" fill="#c8a45d"/>
-              <rect x="288" y="146" width="14" height="10" rx="4" fill="#c8a45d"/>
-            </g>
-            <g transform="translate(58 232)">
-              <path d="M0 0h86" stroke="#c8a45d" stroke-width="5" stroke-linecap="round"/>
-              <path d="M43 0v52M14 52h58" stroke="#c8a45d" stroke-width="5" stroke-linecap="round"/>
-              <path d="M14 18l-12 24h24zM72 18L60 42h24z" fill="none" stroke="#c8a45d" stroke-width="3"/>
-            </g>
-            <circle cx="86" cy="88" r="7" fill="#c8a45d" opacity=".7"/>
-            <circle cx="326" cy="98" r="5" fill="#ffffff" opacity=".8"/>
-          </svg>
-        </div>
+  <div class="layout">
+    <!-- ============ القائمة الجانبية ============ -->
+    <aside class="sidebar" id="sidebar" aria-label="قائمة التنقل الرئيسية">
+      <div class="side-progress">
+        <div class="side-progress-top"><span>تقدّم التكوين</span><strong id="sidePct">0%</strong></div>
+        <div class="progress-track"><div class="progress-fill" id="sideBar"></div></div>
+        <small id="sideHint">أكمل المحاور الثمانية لتحصل على شهادة التخرّج</small>
       </div>
 
-      <div class="quick-rules">
-        <article><span class="q-ico">①</span><h3>لا وصية لوارث</h3><p>الورثة يأخذون ما فرض الله لهم، إلا ما أجازوه بعد الوفاة في المذهب الإباضي.</p></article>
-        <article><span class="q-ico">②</span><h3>الثلث حدّ الوصية</h3><p>الوصية لغير الورثة تُنفَّذ من الثلث، والزيادة موقوفة على إجازة الورثة.</p></article>
-        <article><span class="q-ico">③</span><h3>الحقوق أولاً</h3><p>تُقدَّم الديون والأمانات وحقوق العباد على الوصايا، ثم يبقى الباقي للورثة.</p></article>
+      <div class="nav-label">مسار التكوين</div>
+      <button class="nav-item active" data-page="home"><span class="nav-ico">🏠</span><span>الرئيسية</span></button>
+      <button class="nav-item" data-page="concept"><span class="nav-ico">📖</span><span>المدخل التصوري</span></button>
+      <button class="nav-item" data-page="rules"><span class="nav-ico">⚖️</span><span>أحكام الوصية ومقاصدها</span></button>
+      <button class="nav-item" data-page="kaffarat"><span class="nav-ico">🕊️</span><span>الكفّارات</span></button>
+      <button class="nav-item" data-page="rights"><span class="nav-ico">📜</span><span>الحقوق والالتزامات</span></button>
+      <button class="nav-item" data-page="agent"><span class="nav-ico">🤝</span><span>الوكيل وأهليته</span></button>
+      <button class="nav-item" data-page="mirath"><span class="nav-ico">🧮</span><span>مدخل المواريث</span></button>
+      <button class="nav-item" data-page="tafdiya"><span class="nav-ico">🧾</span><span>تصفية التركات</span></button>
+      <button class="nav-item nav-special" data-page="builder"><span class="nav-ico">✍️</span><span>صانع الوصيّة</span><em>تخرّج</em></button>
+
+      <div class="nav-label">أدوات مساندة</div>
+      <button class="nav-item" data-page="quiz"><span class="nav-ico">🧠</span><span>اختبار المعرفة</span></button>
+      <button class="nav-item" data-page="glossary"><span class="nav-ico">🔍</span><span>معجم المصطلحات</span></button>
+      <button class="nav-item" data-page="about"><span class="nav-ico">ⓘ</span><span>عن الدورة والمصادر</span></button>
+
+      <div class="side-note">
+        <strong>تنبيه شرعي</strong>
+        مادة تعليمية مبنيّة على الكتاب والسنة وفقه المذهب الإباضي، وليست فتوى. راجع عالماً ثقة، ووثّق وصيتك وفق القانون المحلي.
       </div>
+    </aside>
 
-      <div class="section-head">
-        <div><span class="kicker">مسار التكوين</span><h2>ستة محاور... من الفهم إلى التطبيق</h2></div>
-        <span class="counter" id="homeCounter">٠ / ٦ منجز</span>
-      </div>
-      <div class="module-grid" id="moduleGrid"></div>
+    <main class="main" id="main">
 
-      <div class="notice">
-        <span class="notice-ico">⚠️</span>
-        <div><strong>قبل أن تبدأ</strong><p>هذا التطبيق مادة تعليمية مبنية على الكتاب والسنة وكتب الفقه الإباضي، ولا يُعدّ فتوى شرعية ولا بديلاً عن التوثيق الرسمي. ومع اعتماد المذهب الإباضي نُبِّه على مواضع الخلاف الاجتهادي؛ فارجع إلى عالم ثقة من أهل المذهب ومكتب توثيق أو المحكمة المختصة. والله أعلم.</p></div>
-      </div>
-    </section>
-
-    <!-- ================= المدخل التصوري ================= -->
-    <section class="page" id="concept">
-      <div class="page-head">
-        <span class="kicker">المحور الأول</span>
-        <h2>المدخل التصوري للوصيّة</h2>
-        <p>قبل صياغة النص، نُرسّخ معنى الوصية ومكانتها ومقاصدها في الشريعة.</p>
-      </div>
-
-      <div class="card">
-        <h3>ما الوصيّة؟</h3>
-        <p><strong>لغةً:</strong> العهد والوصيّة، يقال أوصى فلانٌ ب الشيء إذا عهده إليه.</p>
-        <p><strong>اصطلاحاً:</strong> عهدٌ يصدر من الإنسان في مرضه أو س الصحة بما يُعمل بعد وفاته؛ وقيل: هي ما أُضيف إلى ما بعد الموت، أما ما كان في الحياة فيُسمّى «الإيصاء» أو التوصية. والفرق الفقهي بين الوصية والإيصاء محلّ تفصيل في كتب الفقه الإباضي، والله أعلم.</p>
-        <div class="quote">
-          <span class="qmark">❝</span>
-          <p>﴿كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ لِلْوَالِدَيْنِ وَالْأَقْرَبِينَ بِالْمَعْرُوفِ ۖ حَقًّا عَلَى الْمُتَّقِينَ﴾</p>
-          <small>سورة البقرة — الآية ١٨٠. وحكم الوصية للوالدين والأقربين الذين يرثون منسوخٌ في المذهب الإباضي بآيات المواريث، وقيل: نُسخت بقوله ﷺ «لا وصية لوارث»؛ وبقيت الوصية بالمعروف والتقوى.</small>
-        </div>
-      </div>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3>دليل مشروعيّتها</h3>
-          <div class="hadith">
-            <p>«ما حقّ امرئٍ مسلمٍ له شيءٌ يريد أن يوصيَ فيه، يبيتُ ليلتين إلا ووصيّتُه مكتوبةٌ عنده»</p>
-            <small>رواه البخاري ومسلم — متفق عليه.</small>
-          </div>
-          <div class="hadith">
-            <p>«أن تَذَرَ ورثتَك أغنياءَ خيرٌ من أن تترَكهم عالةً يتكفّفون الناس»</p>
-            <small>حديث سعد بن أبي وقّاص — رواه البخاري ومسلم. وفيه إشارة إلى أن «الثلث والثلث كثير».</small>
-          </div>
-          <div class="hadith">
-            <p>«لا وصيّةَ لوارثٍ»</p>
-            <small>رواه الترمذي وأبو داود وغيرهما، وصحّحه جماعة من أهل العلم، وله طرق وخلاف في إسناده؛ وبه أخذ فقهاء المذهب الإباضي.</small>
-          </div>
-        </div>
-        <div class="card">
-          <h3>المقاصد الشرعية للوصيّة</h3>
-          <ul class="goal-list">
-            <li><span>🕌</span><div><strong>حفظ الدين</strong><p>الوصية بالتقوى وأداء ما على العبد من عبادات وكفّارات.</p></div></li>
-            <li><span>💰</span><div><strong>حفظ المال</strong><p>سداد الديون وردّ الأمانات، وتوجيه الثلث إلى وجوه البرّ.</p></div></li>
-            <li><span>👨‍👩‍👧</span><div><strong>رعاية الذرّية والأهل</strong><p>الإحسان إلى الورثة وصلة الرحم دون إخلال بالعدل.</p></div></li>
-            <li><span>⚖️</span><div><strong>تحقيق العدل</strong><p>منع الضرر بالورثة وتقليل النزاع بتوثيق الحقوق والشهود.</p></div></li>
-            <li><span>🌱</span><div><strong>الصدقة الجارية</strong><p>وقف أو مدرسة أو مسجد أو غيرها مما يبقى نفعه بعد الموت.</p></div></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>أنواع الوصيّة</h3>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>النوع</th><th>الموضوع</th><th>الحكم المختصر</th></tr></thead>
-            <tbody>
-              <tr><td>وصية بالتقوى</td><td>العهد بالتمسّك بالدين وحسن الخلق</td><td>مستحبّة ومندوب إليها</td></tr>
-              <tr><td>وصية بمال لغير وارث</td><td>قريب غير وارث، أو صديق، أو جهة برّ</td><td>تُنفَّذ من الثلث</td></tr>
-              <tr><td>وصية لوارث</td><td>أحد الورثة بزيادة عن نصيبه</td><td>لا تنفذ إلا بإجازة الورثة بعد الوفاة في المذهب الإباضي</td></tr>
-              <tr><td>وصية بديون وأمانات</td><td>قرض، أجرة، وديعة، مهر مؤجّل</td><td>واجبة الأداء، مقدَّمة على الوصايا</td></tr>
-              <tr><td>وصية بتنفيذ</td><td>تعيين وكيل أو وصيّ لتنفيذ ما سبق</td><td>جائزة بمن تتوفر فيه الأمانة والقدرة</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="card soft-card">
-        <h3>ما لا تصحّ فيه الوصيّة</h3>
-        <div class="pill-list">
-          <span>✗ في معصية أو قطيعة رحم</span>
-          <span>✗ لوارث بغير إجازة بعد الوفاة</span>
-          <span>✗ بما يُضرّ بالورثة بأكثر من الثلث</span>
-          <span>✗ بدعوى لا دليل عليها أو إقرار باطل</span>
-          <span>✗ إكراه الورثة على الإجازة</span>
-        </div>
-      </div>
-
-      <div class="module-done">
-        <label class="check-line"><input type="checkbox" data-mod="1"><span>أنهيت المحور الأول</span></label>
-        <button class="btn btn-primary btn-sm" data-go="rules">المحور التالي: الأحكام والمقاصد ←</button>
-      </div>
-    </section>
-
-    <!-- ================= الأحكام والمقاصد ================= -->
-    <section class="page" id="rules">
-      <div class="page-head">
-        <span class="kicker">المحور الثاني</span>
-        <h2>أحكام الوصيّة ومقاصدها الشرعية</h2>
-        <p>الحكم، والحدّ، والترتيب... قواعد عملية قبل الكتابة.</p>
-      </div>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3>حكم الوصيّة</h3>
-          <p>الوصية <strong>مستحبّة</strong> لمن له مال، ويستحبّ ألّا يبيت ليلتين ووصيته مكتوبة. وتصير <strong>لازمة</strong> إذا تعلّقت بحقوق العباد كالدّين والأمانات، لأن أداء الحقوق واجب.</p>
-          <p>وفي المذهب الإباضي تفصيلٌ في بعض المسائل: كالوصية للوارث، والوصية بأكثر من الثلث، وتقديم ديون الله على ديون العباد. يُرجع إلى المعتمد من كتب المذهب، ولا يُفتى بغير دليل.</p>
-        </div>
-        <div class="card">
-          <h3>ترتيب الأداء بعد الوفاة</h3>
-          <ol class="order-list">
-            <li><span>١</span>تجهيز الميت وتكفينه بالمعروف من ماله، من غير إسراف</li>
-            <li><span>٢</span>ديون الله والعباد الثابتة (زكاة، حج، كفّارات، قرض، أجرة...)</li>
-            <li><span>٣</span>ردّ الأمانات والودائع والعهود إلى أصحابها</li>
-            <li><span>٤</span>تنفيذ الوصايا لغير الورثة في حدود الثلث</li>
-            <li><span>٥</span>توزيع الباقي على الورثة بحسب المواريث</li>
-            <li><span>٦</span>الإشهاد على الدفع والإبراء، وتوثيق التقسيم</li>
-          </ol>
-          <small class="tiny">في ترتيب ديون الله والعباد تفصيلٌ واجتهادٌ في المذهب الإباضي؛ والمُعوَّل على ترجيح عالم ثقة من أهل المذهب، والله أعلم.</small>
-        </div>
-      </div>
-
-      <div class="card calculator-card">
-        <div class="calc-copy">
-          <h3>حدّ الثلث: حساب تقديري</h3>
-          <p>أدخل قيمة التركة الصافية بعد الديون لتعرف الحدّ الأقصى للوصايا لغير الورثة.</p>
-          <label for="estateInput">التركة الصافية المقدَّرة</label>
-          <div class="input-with-unit">
-            <input type="number" id="estateInput" min="0" step="1" placeholder="مثال: 300000" inputmode="numeric">
-            <span id="currencyLabel">وحدة نقد</span>
-          </div>
-          <div class="calc-result">
-            <div><small>الثلث الأقصى</small><strong id="thirdOut">—</strong></div>
-            <div><small>الباقي للورثة</small><strong id="restOut">—</strong></div>
-          </div>
-          <small class="tiny">هذا تقدير حسابي تعليمي فقط؛ لا يُغني عن تقويم التركة فعلياً ولا عن حساب المواريث ولا عن إجازة الورثة لما زاد على الثلث.</small>
-        </div>
-        <div class="calc-art" aria-hidden="true"><div class="pie" id="pieChart"><span>الثلث</span></div></div>
-      </div>
-
-      <div class="card">
-        <h3>حالات تطبيقية <small>(اضغط لعرض الجواب)</small></h3>
-        <div class="accordion" id="caseAccordion">
-          <details>
-            <summary>١) أوصى لابنه بـ ٢٠٪ من تركته، وله ورثة آخرون.</summary>
-            <p>الابن وارث، فالوصية لا تنفذ في المذهب الإباضي؛ لأن «لا وصية لوارث». فإن أجاز الورثة ذلك <em>بعد وفاته</em> باتفاق منهم وطيب نفس، نفذت كأنها هبة منهم، لا كوصية منه. والله أعلم.</p>
-          </details>
-          <details>
-            <summary>٢) أوصى لابن عمّه (غير وارث) بنصف التركة.</summary>
-            <p>تُنفَّذ الوصية من الثلث فقط، والزيادة متوقفة على إجازة الورثة بعد الوفاة في المذهب الإباضي. من ثمّ يُكتب في الوثيقة: «أوصي له من ثلثي بما يُحدَّد...» توخّياً للحدّ.</p>
-          </details>
-          <details>
-            <summary>٣) كان عليه دين، ولم يكتب وصية.</summary>
-            <p>الدين مقدَّم على الميراث وعلى الوصايا واجب الأداء من التركة قبل القسمة. كتابة الوصية هنا وسيلة لحفظ الدين وإعلام الورثة والوكيل، لا لإنشاء حقّ جديد.</p>
-          </details>
-          <details>
-            <summary>٤) أوصي ببناء مسجد أووقف كتابةً يُنتفع بها.</summary>
-            <p>هذا من وجوه البرّ والصدقة الجارية، ويُخرج من الثلث لغير الورثة في المذهب الإباضي. يُستحبّ تحديد الجهة والغرض والوكيل المُكفَّل بالتنفيذ في الوثيقة.</p>
-          </details>
-        </div>
-      </div>
-
-      <div class="module-done">
-        <label class="check-line"><input type="checkbox" data-mod="2"><span>أنهيت المحور الثاني</span></label>
-        <button class="btn btn-primary btn-sm" data-go="kaffarat">المحور التالي: الكفّارات ←</button>
-      </div>
-    </section>
-
-    <!-- ================= الكفارات ================= -->
-    <section class="page" id="kaffarat">
-      <div class="page-head">
-        <span class="kicker">المحور الثالث</span>
-        <h2>الكفّارات: أنواعها وأحكامها</h2>
-        <p>ما ثبت في ذمّة الميت من كفّارات يُنبَّه عليه في الوصية، ويُحدَّد من يخرجه ومستحقّه.</p>
-      </div>
-
-      <div class="card compact-card">
-        <p><strong>الكفّارة:</strong> ما يخرجه المكلَّف تكفيراً لذنب أو خلل في عبادة أو عهد، بأمرٍ من الله أو رسوله ﷺ. تختلف الكفّارات في السبب والقدر والترتيب، وفي المذهب الإباضي خلافٌ اجتهادي في مسائل منها؛ فالتفصيل أدناه تعليمي مُختصر.</p>
-      </div>
-
-      <div class="kaffar-tabs" id="kaffarTabs"></div>
-      <div class="card kaffar-detail" id="kaffarDetail"></div>
-
-      <div class="card soft-card">
-        <h3>الكفّارات في وصيّتك</h3>
-        <div class="steps-inline">
-          <div><span>١</span>حدّد النوع وعدد المرّات</div>
-          <div><span>٢</span>بيّن من يُخرجها (الوكيل)</div>
-          <div><span>٣</span>حدّد المستحق أو الجهة</div>
-          <div><span>٤</span>أثبتها في الوثيقة مع الشهود</div>
-        </div>
-        <button class="btn btn-primary btn-sm" id="addKaffarToWill">أضف الكفّارة المختارة إلى وصيّتي ✍️</button>
-      </div>
-
-      <div class="module-done">
-        <label class="check-line"><input type="checkbox" data-mod="3"><span>أنهيت المحور الثالث</span></label>
-        <button class="btn btn-primary btn-sm" data-go="rights">المحور التالي: الحقوق والالتزامات ←</button>
-      </div>
-    </section>
-
-    <!-- ================= الحقوق والالتزامات ================= -->
-    <section class="page" id="rights">
-      <div class="page-head">
-        <span class="kicker">المحور الرابع</span>
-        <h2>الحقوق والالتزامات المالية والشخصية</h2>
-        <p>الوصية الأمينة تحصر ما للميت وما عليه، قبل أن يطالب أحدٌ أحداً.</p>
-      </div>
-
-      <div class="seg-tabs" role="tablist">
-        <button class="seg active" data-seg="money" role="tab">💰 الحقوق المالية</button>
-        <button class="seg" data-seg="personal" role="tab">🤲 الالتزامات الشخصية</button>
-        <button class="seg" data-seg="heirs" role="tab">⚖️ للورثة والوكيل</button>
-      </div>
-
-      <div class="seg-panel active" id="seg-money">
-        <div class="card">
-          <h3>ما يجب حصره في التركة</h3>
-          <div class="right-grid">
-            <div class="right-item"><span>🕌</span><div><strong>ديون الله</strong><p>زكاة لم تُخرج، حج لم يُؤدَّ، كفّارات، نذور. والخلاف في التقديم محفوظ في المذهب الإباضي، والاحتياط إخراجها.</p></div></div>
-            <div class="right-item"><span>🤝</span><div><strong>ديون العباد</strong><p>قرض، ثمن متأخّر، أجرة عامل، مهر مؤجّل، نفقة واجبة، تعويضات ثابتة.</p></div></div>
-            <div class="right-item"><span>🔐</span><div><strong>الأمانات والودائع</strong><p>مال الغير عند الميت، عهود، رهون، وثائق، وكل ما يجب ردّه إلى صاحبه.</p></div></div>
-            <div class="right-item"><span>📑</span><div><strong>العقود والالتزامات</strong><p>عقود إيجار، بيع، شراكة، ضمانات، وبيان ما انقضى وما بقي منها.</p></div></div>
-            <div class="right-item"><span>👥</span><div><strong>حقوق الزوجة والأولاد</strong><p>المهر والنفقة والمتاع بالمعروف، ورعاية الصغار، وحفظ مال القاصر.</p></div></div>
-            <div class="right-item"><span>🌱</span><div><strong>الوصايا من الثلث</strong><p>لغير الورثة: أقارب، جيران، جهات برّ، صدقة جارية أو وقف.</p></div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="seg-panel" id="seg-personal">
-        <div class="card">
-          <h3>الوصية بالمعروف</h3>
-          <ul class="goal-list">
-            <li><span>📿</span><div><strong>الوصية بالتقوى</strong><p>«أوصيكم بتقوى الله والعمل بطاعته»، فهي أجمع الوصايا وأنفعها.</p></div></li>
-            <li><span>💞</span><div><strong>برّ الوالدين وصلة الرحم</strong><p>العهد بالإحسان إليهما وعدم قطع الأقارب، ولو كان بينهم خلاف.</p></div></li>
-            <li><span>🧒</span><div><strong>رعاية القاصرين</strong><p>الإحسان إلى الصغار، وتحديد من يحفظ مالهم ويُحسن تربيتهم.</p></div></li>
-            <li><span>🕊️</span><div><strong>حسن المعاشرة</strong><p>الرفق بالورثة، وعدم إيقاع الخصومة بينهم، والعدل في القول والفعل.</p></div></li>
-            <li><span>🚫</span><div><strong>لا وصية في معصية</strong><p>لا طاعة لمخلوق في معصية الخالق؛ فلا تُكتب وصية تخالف شرعاً أو تُضرّ بغير حق.</p></div></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="seg-panel" id="seg-heirs">
-        <div class="card">
-          <h3>ما للورثة وما على الوكيل</h3>
-          <div class="grid-2 tight">
-            <div>
-              <h4 class="mini-title">للورثة</h4>
-              <ul class="checklist">
-                <li>إجازة ما زاد على الثلث اختيارية بعد الوفاة</li>
-                <li>لا يُلزمون بوصية لوارث بغير رضاهم</li>
-                <li>لهم الاطّلاع على جرد التركة والديون</li>
-                <li>لهم الاعتراض على ما يخالف الشرع أو يضرّهم بغير حق</li>
-              </ul>
+      <!-- ================= الرئيسية ================= -->
+      <section class="page active" id="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="hero-tag">✦ دورة تطبيقية · مشروع رسوخ</span>
+            <h1>تفقّه في <span>الوصايا والتركات</span>، واصنع وصيّتك بوعي</h1>
+            <p class="hero-sub">من المدخل التصوري إلى تصفية التركة وتوزيع الميراث، ثم تخرّج بوصيّة نموذجية تحمل اسمك.</p>
+            <div class="hero-presenter">
+              <span class="avatar">ق</span>
+              <div><small>إخراج الأستاذ</small><strong>ح قاسم بن ح عمر حاج امحمد</strong></div>
             </div>
-            <div>
-              <h4 class="mini-title">على الوكيل</h4>
-              <ul class="checklist">
-                <li>حصر التركة والديون بدقة وتوثيقها</li>
-                <li>أداء الحقوق قبل التوزيع</li>
-                <li>الإشهاد على كل دفع واستلام</li>
-                <li>تقديم حساب ختامي للورثة أو للمحكمة</li>
-              </ul>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-go="builder">✍️ صُغ وصيّتك الآن</button>
+              <button class="btn btn-ghost" data-go="concept">ابدأ التكوين ←</button>
+            </div>
+            <div class="hero-chips">
+              <span>٨ محاور</span><span>حاسبتان تفاعليتان</span><span>٧ كفّارات</span><span>يعمل دون إنترنت</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 420 380">
+              <defs>
+                <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e6f2ec"/></linearGradient>
+                <linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3bb694"/><stop offset="1" stop-color="#0d5548"/></linearGradient>
+              </defs>
+              <circle cx="210" cy="190" r="168" fill="rgba(255,255,255,.08)"/>
+              <circle cx="210" cy="190" r="130" fill="rgba(255,255,255,.06)"/>
+              <g transform="rotate(-5 210 190)">
+                <rect x="106" y="76" width="208" height="238" rx="14" fill="url(#pg)" stroke="#c9a24b" stroke-width="2"/>
+                <path d="M210 76v238" stroke="#cbdcd6" stroke-width="2"/>
+                <path d="M130 116h58M130 136h58M130 156h42M232 116h58M232 136h58M232 156h42" stroke="#94b7ab" stroke-width="4" stroke-linecap="round"/>
+                <path d="M130 190h152M130 210h152M130 230h112M130 250h140" stroke="#dce9e4" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="150" cy="288" r="18" fill="none" stroke="#c9a24b" stroke-width="2.5"/>
+                <path d="M141 288l7 7 13-15" fill="none" stroke="#0d5548" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g transform="rotate(22 318 252)">
+                <rect x="310" y="150" width="16" height="126" rx="8" fill="url(#gr)"/>
+                <path d="M310 276l8 28 8-28z" fill="#c9a24b"/>
+                <rect x="310" y="145" width="16" height="11" rx="5" fill="#c9a24b"/>
+              </g>
+              <g transform="translate(52 240)" stroke="#c9a24b" fill="none" stroke-width="5" stroke-linecap="round">
+                <path d="M0 0h90M45 0v54M12 54h66M12 18 0 44h24zM78 18 66 44h24z"/>
+              </g>
+              <circle cx="86" cy="90" r="7" fill="#c9a24b" opacity=".75"/>
+              <circle cx="340" cy="98" r="5" fill="#fff" opacity=".85"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="quick-rules">
+          <article><span class="q-ico">①</span><h3>لا وصية لوارث</h3><p>إلا ما ثبت في الذمّة من دينٍ أو أمانة، فإنه يُؤدّى من أصل المال لا من الثلث.</p></article>
+          <article><span class="q-ico">②</span><h3>الثلث حدّ النفل</h3><p>ما زاد على الثلث موقوف على إجازة الورثة بعد الوفاة، والوصية بالنسبة المئوية أدوم.</p></article>
+          <article><span class="q-ico">③</span><h3>الحقوق قبل القسمة</h3><p>تجهيزٌ فديونٌ فوصيّةٌ فميراث. ولا يُقدَم على حقّ العباد عند الضيق.</p></article>
+        </div>
+
+        <div class="section-head">
+          <div><span class="kicker">مسار التكوين</span><h2>ثمانية محاور... من الفهم إلى التخرّج</h2></div>
+          <span class="counter" id="homeCounter">٠ / ٨ منجز</span>
+        </div>
+        <div class="module-grid" id="moduleGrid"></div>
+
+        <div class="notice">
+          <span class="notice-ico">⚠️</span>
+          <div><strong>قبل أن تبدأ</strong><p>هذا التطبيق مادة تعليمية مستخلصة من كتاب «إطلالات على فقه التركات» للأستاذ إبراهيم بن عمر بورورو، ومبنيّة على الكتاب والسنة وفقه المذهب الإباضي، ولا تُعدّ فتوى ولا بديلاً عن التوثيق الرسمي. وإذا اختلفت الأحوال أو تزاحمت الحقوق فارجع إلى عالمٍ ثقة ومكتب توثيق أو المحكمة المختصّة. والله أعلم.</p></div>
+        </div>
+      </section>
+
+      <!-- ================= 1. المدخل التصوري ================= -->
+      <section class="page" id="concept">
+        <div class="page-head">
+          <span class="kicker">المحور الأول</span>
+          <h2>المدخل التصوري للوصيّة</h2>
+          <p>قبل صياغة النص نُرسّخ المعنى والمكانة، ونفهم فلسفة المال ونظام التوريث في الإسلام.</p>
+        </div>
+
+        <div class="card lead-card">
+          <h3>ما الوصيّة؟</h3>
+          <div class="def-grid">
+            <div><span>لغةً</span><p>من الإيصاء: طلب الموصي غيرَه فعل شيء على غيبٍ منه، في حياته أو بعد وفاته.</p></div>
+            <div><span>شرعاً</span><p>عهدٌ معنوي وتمليكٌ مقيّد بما بعد الموت، بطريق الإقرار والاعتراف أو التبرّع والتطوّع، للخالق أو للمخلوق.</p></div>
+          </div>
+          <div class="quote">
+            <span class="qmark">❝</span>
+            <p>﴿كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ لِلْوَالِدَيْنِ وَالْأَقْرَبِينَ بِالْمَعْرُوفِ حَقًّا عَلَى الْمُتَّقِينَ﴾</p>
+            <small>البقرة ١٨٠. وبقيت الوصية بالمعروف والتقوى بعد نسخ الوصية للورثة بآيات المواريث أو بقوله ﷺ «لا وصية لوارث».</small>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>هل من الضرورة أن يتعلّم الناس هذا الفقه؟</h3>
+            <p class="muted">الجواب: نعم. وذكر الكتاب أسباباً منها:</p>
+            <ul class="check-list">
+              <li>الناس مكلّفون بتقسيم الميراث وفق ضوابط الشرع ونصوص القرآن والسنة.</li>
+              <li>الإنسان المسلم مكلّف بكتابة وصيته كما نطقت الآية الكريمة.</li>
+              <li>كل واحد منا قد يكون صاحب وصية، أو كاتباً لها، أو وكيلاً عليها، أو وارثاً.</li>
+              <li>الجهل بهذه الأحكام أدّى إلى مشاكل بين الورثة وتعطيل كثير من الوصايا.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>فلسفة الإسلام في المال</h3>
+            <p>الله وحده الملك الحقيقي، وجعلنا مستخلَفين فيه: ﴿آمِنُوا بِاللَّهِ وَرَسُولِهِ وَأَنفِقُوا مِمَّا جَعَلَكُم مُّسْتَخْلَفِينَ فِيهِ﴾ [الحديد ٧].</p>
+            <p>الإسلام وسط بين الاشتراكية والرأسمالية: المال وسيلة لا غاية، يُكسب بالحلال ويُنفق بالاعتدال، ثم ينتقل إلى الأقرب فالأقرب.</p>
+            <div class="hadith">
+              <p>«لا تزول قدَم ابن آدم يوم القيامة من عند ربّه حتى يُسأل عن خمس: عن عمره فيم أفناه، وعن شبابه فيم أبلاه، وماله من أين اكتسبه وفيم أنفقه، وماذا عمل فيما علم».</p>
+              <small>رواه الترمذي</small>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card soft-card">
-        <h3>قائمة جرد سريعة <small id="rightsCheckCount">٠ / ٦</small></h3>
-        <div class="check-grid" id="rightsChecklist"></div>
-        <button class="btn btn-primary btn-sm" id="rightsToBuilder">انقل هذه القائمة إلى صانع الوصية ←</button>
-      </div>
+        <div class="section-head">
+          <div><span class="kicker">من الكتاب</span><h2>سبع ميزات لنظام التوريث الإسلامي</h2></div>
+        </div>
+        <div class="feature-grid" id="featuresGrid"></div>
 
-      <div class="module-done">
-        <label class="check-line"><input type="checkbox" data-mod="4"><span>أنهيت المحور الرابع</span></label>
-        <button class="btn btn-primary btn-sm" data-go="agent">المحور التالي: الوكيل وأهليته ←</button>
-      </div>
-    </section>
+        <div class="section-head">
+          <div><span class="kicker">واقع عملي</span><h2>أخطاء تُعقّد التركات</h2></div>
+        </div>
+        <div class="error-grid" id="errorsGrid"></div>
 
-    <!-- ================= الوكيل ================= -->
-    <section class="page" id="agent">
-      <div class="page-head">
-        <span class="kicker">المحور الخامس</span>
-        <h2>الوكيل وأهليته في تنفيذ الوصيّة</h2>
-        <p>اختيار من يُنفّذ الوصية أمانةٌ؛ فالنصّ الواضح يمنع الخلاف بعد الوفاة.</p>
-      </div>
+        <div class="callout">
+          <strong>خلاصة المحور</strong>
+          <p>الوصية قربةٌ وطاعة، ومقصدها حفظ حقوق الله وحقوق العباد، وموردٌ للأجر والثواب. وأداؤها في الحياة أفضل من تأخيرها إلى ما بعد الموت.</p>
+        </div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="home">← الرئيسية</button><button class="btn btn-primary" data-go="rules">المحور التالي: الأحكام والمقاصد ←</button></div>
+      </section>
 
-      <div class="grid-2">
+      <!-- ================= 2. الأحكام والمقاصد ================= -->
+      <section class="page" id="rules">
+        <div class="page-head">
+          <span class="kicker">المحور الثاني</span>
+          <h2>أحكام الوصيّة ومقاصدها الشرعية</h2>
+          <p>الحكم، والحدود، وما يُستحبّ أن يتحرّاه الموصي في نصّه.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card accent-card">
+            <h3>حكم الوصية</h3>
+            <p>الوصية واجبة على من ترك خيراً عند فقهاء المذهب الإباضي؛ لظاهر قوله تعالى «كُتِبَ عليكم» و«حقّاً على المتقين». ويُؤكّد ذلك حديث الإمام الربيع بن حبيب: «لا يبيت امرؤ مسلمٌ له شيءٌ يوصي به ليلتين إلا ووصيّته مكتوبةٌ عند رأسه».</p>
+            <p>وقد يرد في الحديث لفظ «له شيء يريد أن يوصي فيه»، فيُقدَّر: «له شيء يجب أن يوصي فيه»؛ لأن الوصية لا تجب على من لا مال له.</p>
+            <div class="mini-note">تنبيه: الحكم الشرعي والتفصيل بين الوجوب والاستحباب محلّ اجتهاد بين المذاهب؛ المعتمد هنا ما ذهب إليه المذهب الإباضي.</div>
+          </div>
+          <div class="card">
+            <h3>هل يُنتفع بأجر الأعمال بعد الموت؟</h3>
+            <p>نعم، لمن مات موفياً بدين الله، تائباً راجعاً إليه: ﴿إِنَّا نَحْنُ نُحْيِي الْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا وَآثَارَهُمْ﴾ [يس ١٢].</p>
+            <div class="hadith"><p>«إذا مات ابن آدم انقطع عمله إلا من ثلاث: صدقةٌ جارية، أو علمٌ يُنتفع به، أو ولدٌ صالحٌ يدعو له».</p><small>رواه مسلم</small></div>
+            <div class="hadith"><p>«إن الله تصدّق عليكم عند وفاتكم بثلث أموالكم زيادةً في أعمالكم».</p><small>رواه ابن ماجة والبزّار</small></div>
+          </div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">تصوير التنفيذ</span><h2>مراتب صرف التركة</h2></div></div>
+        <div class="stair" id="stair">
+          <div class="stair-step"><span>١</span><strong>التجهيز</strong><small>بلا إسراف ولا تقتير</small></div>
+          <div class="stair-step"><span>٢</span><strong>ديون العباد ثم الخالق</strong><small>وإن ضاق: محاصصة</small></div>
+          <div class="stair-step"><span>٣</span><strong>الواجبات من أصل المال</strong><small>حقوق ووصية الأقرب</small></div>
+          <div class="stair-step"><span>٤</span><strong>النوافل من الثلث</strong><small>وما فضل رُدّ للورثة</small></div>
+          <div class="stair-step"><span>٥</span><strong>الميراث</strong><small>للورثة بحسب الفروض</small></div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">حدود شرعية</span><h2>ممنوعات الوصيّة</h2></div></div>
+        <div class="ban-grid">
+          <div class="ban-card"><span>🚫</span><h3>الوصية لوارث</h3><p>لقوله ﷺ «لا وصية لوارث»، إلا أن يكون للوارث دينٌ ثابتٌ في ذمّة الموصي فليُؤدَّ؛ أمّا وصية النفل فلا تجوز ولا تستحق.</p></div>
+          <div class="ban-card"><span>📐</span><h3>أكثر من الثلث</h3><p>لا يجوز أن يوصي نفلاً بأكثر من ثلث ماله، مراعاةً لمصلحة الورثة. لحديث سعد: «الثلث، والثلث كثير».</p></div>
+          <div class="ban-card"><span>⚠️</span><h3>الإضرار بالورثة</h3><p>قصدُ منع الورثة من الميراث بتوجيه المال لجهة أخرى تحت غطاء الوصية من كبائر الذنوب: ﴿مِن بَعْدِ وَصِيَّةٍ يُوصَى بِهَا أَوْ دَيْنٍ غَيْرَ مُضَارٍّ﴾.</p></div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">قبل أن تكتب</span><h2>تسع توجيهات</h2></div></div>
+        <ol class="tips-list" id="tipsList"></ol>
+
+        <div class="section-head"><div><span class="kicker">الهيكل المعتمد</span><h2>هيكل الوصيّة النموذجية</h2></div></div>
+        <div class="structure-grid" id="structureGrid"></div>
+
+        <div class="section-head"><div><span class="kicker">اقلب البطاقة</span><h2>صحّح تصوّراتك</h2></div></div>
+        <div class="flip-grid" id="correctionGrid"></div>
+
+        <div class="callout"><strong>المقصد الأكبر</strong><p>الوصية وسيلة لأداء الحقوق، لا بديلاً عن التوبة والاستقامة. ولا يصلح الآخرة إلا توبةٌ نصوحةٌ مع وصيّةٍ صالحة. قال تعالى: ﴿إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ﴾ [هود ١١٤].</p></div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="concept">← المدخل التصوري</button><button class="btn btn-primary" data-go="kaffarat">المحور التالي: الكفّارات ←</button></div>
+      </section>
+
+      <!-- ================= 3. الكفارات ================= -->
+      <section class="page" id="kaffarat">
+        <div class="page-head">
+          <span class="kicker">المحور الثالث</span>
+          <h2>الكفّارات: أنواعها وأحكامها</h2>
+          <p>سبعة مواضع منصوصة، وحكمٌ محقَّق فيما لم يرد فيه نص.</p>
+        </div>
+
+        <div class="card intro-card">
+          <p>كثيرون يظنّون أن الكفّارات تمحو الذنوب، حتى يُغرقوا وصيّتهم بصنوفها مع الاستمرار في المعاصي. والحقّ أن <strong>التوبة هي التي تمحو الذنوب</strong>، ويُتمّمها الإتيانُ بالكفّارة إن كانت مشروعةً ومنصوصاً عليها.</p>
+          <div class="mini-note">قال القطب اطفيش رحمه الله: «وَالْكَفّارَةُ لَمْ يَثْبُتْ لُزُومُهَا مِنَ الْكِتَابِ وَلاَ مِنَ السُّنَّةِ وَلاَ مِنَ الإِجْمَاعِ، وَإِنَّمَا قَالَ بِهَا أَصْحَابُهُ تَأْدِيباً وَعُقُوبَةً وَزَجْراً» — أي في غير المواضع المنصوصة.</div>
+        </div>
+
+        <div class="tabs" id="kaffarTabs" role="tablist" aria-label="أنواع الكفارات"></div>
+        <div class="card tab-panel" id="kaffarPanel" role="tabpanel"></div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>حكم الكفارة في غير المنصوص عليه</h3>
+            <p>قال طائفة من العلماء — منهم أصحابنا المغاربة — بوجوب كفّارة مغلّظة لمن ترك الصلاة أو ارتكب كبيرة تائباً قياساً على المنصوص. وذهب آخرون إلى أن القياس غير صحيح، لأن الكفّارات كالحدود تُدرأ بالشُّبهات، ومال المسلم له حرمة فلا يُقتطع منه إلا بموجب شرعي.</p>
+            <p class="muted">وما لم يرد فيه نصٌّ شرعي فلا تَلزم فيه الكفّارة إلزاماً عند التحقيق، لكن يُرشد التائب أن يُبدّل مكان الإساءة إحساناً؛ ويُستحبّ الإخراج احتياطاً لا إلزاماً.</p>
+          </div>
+          <div class="card">
+            <h3>التنصّل في الوصية</h3>
+            <p>يُستحسن أن يوصي المرء بما تيسّر من الكفّارات احتياطاً ورغبةً فيما عند الله، لكن مع تنبيهين:</p>
+            <ul class="check-list">
+              <li>ما ثبت في الذمة من ديون وكفّارات واجبة يُخرَج من <strong>أصل المال</strong> لا من الثلث؛ فلا يُخلط بالتطوّع.</li>
+              <li>لا يُفضح الموصي نفسه بذكر سبب الكفّارة؛ بل يقول: «وأوصيتُ بكذا وكذا للفقراء والمساكين»، ويكفي إثباتها دون ذكر سببها.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="rules">← الأحكام والمقاصد</button><button class="btn btn-primary" data-go="rights">المحور التالي: الحقوق ←</button></div>
+      </section>
+
+      <!-- ================= 4. الحقوق والالتزامات ================= -->
+      <section class="page" id="rights">
+        <div class="page-head">
+          <span class="kicker">المحور الرابع</span>
+          <h2>الحقوق والالتزامات المالية والشخصية</h2>
+          <p>ما للميت وما عليه، وترتيبُ أداء الحقوق قبل قسمة التركة.</p>
+        </div>
+
+        <div class="rights-timeline" id="rightsTimeline"></div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>أقسام الديون</h3>
+            <div class="split">
+              <div><span class="chip">ديون العباد</span><p>ما ثبت في الذمة نتيجة التعامل مع الناس: قرض، بيع، شراء، أمانة، ضمان إتلاف أو مظلمة. الدليل: ﴿مِن بَعْدِ وَصِيَّةٍ يُوصِي بِهَا أَوْ دَيْنٍ﴾.</p></div>
+              <div><span class="chip">ديون الخالق</span><p>الحقوق الواجبة لله تعالى في المال، وتصل إلى الفقراء والمساكين: الزكاة، الحج، الكفّارات، والنذور الواجبة. أسندت لله تعظيماً لشأنها.</p></div>
+            </div>
+            <div class="hadith"><p>«الحقُّ لله أحقُّ بالقضاء» — في قصة امرأةٍ نذرت أن تحجّ فماتت قبل الحجّ.</p><small>رواه البخاري في معناه، ومالك في الموطأ</small></div>
+          </div>
+          <div class="card">
+            <h3>أحكام المدينين عند الوفاة</h3>
+            <ul class="check-list">
+              <li>إن اتسعت التركة لكل الديون أُخرجت كلها إذا أوصى بها، اتفاقاً.</li>
+              <li>إن لم تتّسع فُدّمت ديون الخلق على ديون الخالق.</li>
+              <li>إن ضاق الحال عن ديون العباد قُسِمت بينهم بالمحاصصة، ولا شيء على الورثة بعدها إلا إن تبرّعوا.</li>
+            </ul>
+            <p class="muted">قال القطب رحمه الله: «ويبدأون من ماله بالكفن ثم الديون ثم الوصية ثم الميراث». ولا شيء على الورثة مما لم يعلموا به من تبعات، إلا إن تربّعوا في مال الميت.</p>
+          </div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">مثال محسوب</span><h2>المحاصصة بين الدائنين</h2></div></div>
         <div class="card">
-          <h3>الفرق بين الوكيل والوصيّ</h3>
-          <div class="compare">
-            <div><span>🤝</span><strong>الوكيل / المُوصى إليه</strong><p>من يعهَد إليه تنفيذ الوصية: جرد، دفع ديون، صرف وصايا، وتقسيم. يُقبل بشرط قبوله.</p></div>
-            <div><span>🛡️</span><strong>الوصيّ على القاصر</strong><p>من يقوم على مال الصغير أو شأنه حتىبلغ رشده، ويُقدَّم على غيره عند وجود الوصية.</p></div>
-            <div><span>🏛️</span><strong>المشرف القضائي</strong><p>تراجع المحكمة أو الجهة المختصة التنفيذ عند النزاع أو غياب الوكيل، وفق القانون.</p></div>
+          <p>توكّأ مالكٌ بقيمة <strong>٣٫٥٠٠٫٠٠٠ دج</strong>، وعليه ديونٌ قدرت بـ<strong>٤٫٦٠٠٫٠٠٠ دج</strong> لستةِ دائنين. فتُقسَم التركة بنسبة كل دين إلى مجموع الديون.</p>
+          <div class="formula">معامل المحاصصة = التركة ÷ مجموع الديون = ٣٫٥٠٠٫٠٠٠ ÷ ٤٫٦٠٠٫٠٠٠ ≈ ٠٫٧٦٠٨٧</div>
+          <div class="table-wrap"><table id="debtTable"><thead><tr><th>الدائن</th><th>الدين المستحق</th><th>المستحق بعد المحاصصة</th></tr></thead><tbody></tbody></table></div>
+          <div class="action-row"><button class="btn btn-primary" data-go="tafdiya">جرّب على حاسبة التركة ←</button></div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">التفريق المهم</span><h2>واجباتٌ ونوافل</h2></div></div>
+        <div class="split-cards">
+          <div class="card"><span class="chip chip-warn">من أصل المال</span><h3>الواجبات</h3><p>إقرار حقوق الله والعباد، والوصية للأقرب عند من أوجبها، وما ثبت من ضمان أو دين. تُقدَّم على الوصايا النافلة وتُخرَج من كل المال.</p></div>
+          <div class="card"><span class="chip">من الثلث</span><h3>النوافل</h3><p>الصدقات، وعشاء القرّاء، وشاة الأعضاء، والصدقة الجارية، وسائر القُرَب التي لم يثبت بها دينٌ في الذمّة. ولا يلزم إخراجها إن لم يترك الموصي ما ينفّذ منه.</p></div>
+        </div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="kaffarat">← الكفّارات</button><button class="btn btn-primary" data-go="agent">المحور التالي: الوكيل ←</button></div>
+      </section>
+
+      <!-- ================= 5. الوكيل ================= -->
+      <section class="page" id="agent">
+        <div class="page-head">
+          <span class="kicker">المحور الخامس</span>
+          <h2>الوكيل وأهليته في تنفيذ الوصيّة</h2>
+          <p>من يستخلفه الموصي، وما يشترط فيه، وحدود مهمّته.</p>
+        </div>
+
+        <div class="card lead-card">
+          <p>من تمام الوصية أن يُكِل الموصي تنفيذها لشخصٍ أمينٍ يستخلفه عليها، وهو من التعاون على البرّ والتقوى. وإن ثبتت الوصية وجب على الورثة تنفيذها إن لم يُستخلف عليها وكيلٌ ينفّذها.</p>
+          <div class="mini-note">يُدعى الوكيل على الوصية: «الوَصيّ». ومهمّته جليلة، تقع عليه مسؤولية عظيمة في تطبيق إرادة مستخلفه.</div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">المعايير الثلاثة</span><h2>أهليّة الوكيل</h2></div></div>
+        <div class="criteria-grid">
+          <div><span>١</span><strong>تقوى الله</strong><p>يخشى الله في تنفيذ الأمانة، ولا يُمال بحبٍ ولا كراهية.</p></div>
+          <div><span>٢</span><strong>العلم</strong><p>يعرف أحكام الوصية ومقاصدها، ويفرق بين الواجب والنافل.</p></div>
+          <div><span>٣</span><strong>الحزم</strong><p>يُنجز ولا يُسوّف، ويحفظ مال الوصية من الضياع والتدنّي.</p></div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>قبل التوكيل</h3>
+            <ul class="check-list">
+              <li>يستأذن الموصي الشخصَ في استخلافه، ويُطلعه على موضوع الوصية، والأمرُ إليه في القبول أو الرفض.</li>
+              <li>قد يكون الاستخلاف بأجرة أو تطوّعاً بلا مقابل مادي؛ والأجر الأخروي أجزل إن ترك الأجرة.</li>
+              <li>يجب تحديد أجرة الوكيل إن فُرضت <strong>قبل الشروع في العمل</strong>، حتى لا يكون جهلها ذريعة إلى المخالفة الشرعية.</li>
+            </ul>
           </div>
+          <div class="card">
+            <h3>مسؤولية التنفيذ</h3>
+            <p>عليه التعجيل قدر المستطاع، ولا عذر له في التواني والتأخير. وإن حدث ضياعٌ لمال الوصية أو تدنٍّ في قيمته بسبب تأخيره <strong>ضمنه</strong>.</p>
+            <p>وإن ظهر له وجه بطلانٍ في الوصية — كالوصية لوارث أو الإضرار — فأصلح بين الجهات فلا إثم عليه، وعليه التبيّن والاستعانة بأهل العلم الراسخين.</p>
+          </div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">من الواقع</span><h2>ثمانية تنبيهات للوكيل</h2></div></div>
+        <div class="agent-grid" id="agentGrid"></div>
+
+        <div class="callout"><strong>حدّ فاصل</strong><p>الوكيل ينفّذ الوصية فقط، ولا يخلط عمله بقسمة الميراث إلا إن وكّله الورثة صراحةً. ولا يكلَّف أصلاً إن لم يترك الموصي مالاً يُنفَّذ منه.</p></div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="rights">← الحقوق والالتزامات</button><button class="btn btn-primary" data-go="mirath">المحور التالي: المواريث ←</button></div>
+      </section>
+
+      <!-- ================= 6. المواريث ================= -->
+      <section class="page" id="mirath">
+        <div class="page-head">
+          <span class="kicker">المحور السادس</span>
+          <h2>مدخل إلى علم المواريث</h2>
+          <p>كيف قسّم الشارع التركة؟ ومن أصحاب الفروض ومن العصبة؟</p>
+        </div>
+
+        <div class="card lead-card">
+          <div class="quote">
+            <span class="qmark">❝</span>
+            <p>﴿يُوصِيكُمُ اللَّهُ فِي أَوْلَادِكُمْ لِلذَّكَرِ مِثْلُ حَظِّ الأُنثَيَيْنِ فَإِن كُنَّ نِسَاءً فَوْقَ اثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ وَإِن كَانَتْ وَاحِدَةً فَلَهَا النِّصْفُ وَلِأَبَوَيْهِ لِكُلِّ وَاحِدٍ مِّنْهُمَا السُّدُسُ مِمَّا تَرَكَ إِن كَانَ لَهُ وَلَدٌ﴾</p>
+            <small>النساء ١١ — الآية التي افتتح بها الكتاب.</small>
+          </div>
+          <p>تولّى الله سبحانه بنفسه تقسيم المال بعد الوفاة، ولم يَعل ذلك للقياس، تحقيقاً للعدل وحفظاً لحقوق الأضعف. فالإرث إجباري: لا يحرم المورّث أحداً من ورثته، ولا يردّ الوارث إرثه.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>طائفتا الورثة</h3>
+            <div class="split">
+              <div><span class="chip">أصحاب الفروض</span><p>هم الذين قدّر الشارع لهم أنصبةً معلومة: النصف، والربع، والثُمن، والثلثان، والثلث، والسدس. لا يزيدون ولا ينقصون إلا بحكم العَول أو الردّ محلّ الخلاف.</p></div>
+              <div><span class="chip">العصبة</span><p>هم من يأخذ ما بقي بعد الفروض، كالابن مع أبويه، والأب إذا لم يكن للمتوفى ولد. ويكون للذكر مثل حظ الأنثيين في أولاد الصلب.</p></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>لماذا نصف نصيب المرأة؟</h3>
+            <p>جعل الله للمرأة نصف ما للرجل من جنسها، ولم يحرمها من الميراث كما صنع أهل الجاهلية، ولم يُسوِّها بالرجل كما ينادي من قصُر علمه.</p>
+            <p>ذلك لأن الشريعة منظومة مترابطة: استحقاقٌ يقابله التزام. فالرجال — آباءً وأبناءً وأزواجاً وإخواناً — مُلزمون بالنفقة على بناتهم وأمهاتهم وزوجاتهم وأخواتهم، والزوج مُلزم بنفقة زوجته مطلقاً، فقيرةً كانت أو موسرة.</p>
+          </div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">مسائل محلولة</span><h2>جرّب واكشف الحل</h2></div></div>
+        <div class="cases-grid" id="casesGrid"></div>
+
+        <div class="notice">
+          <span class="notice-ico">⚠️</span>
+          <div><strong>حدّ هذا المدخل</strong><p>هذه مسائل تعليمية للصور الشائعة، ولا تغني عن علم المواريث. مسائل العَول والحجب والإخوة والأعمام والجدّات والزوجات المتعدّدات ونحوها تحتاج إلى نظرٍ فقهيّ دقيق، فلا تُطبَّق وصيةٌ ولا تُقسَم تركةٌ بغير رجوع إلى أهل العلم والجهات المختصّة.</p></div>
+        </div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="agent">← الوكيل</button><button class="btn btn-primary" data-go="tafdiya">المحور التالي: تصفية التركات ←</button></div>
+      </section>
+
+      <!-- ================= 7. تصفية التركات ================= -->
+      <section class="page" id="tafdiya">
+        <div class="page-head">
+          <span class="kicker">المحور السابع</span>
+          <h2>مدخل إلى علم تصفية التركات</h2>
+          <p>جردٌ، وحقوقٌ مرتّبة، ثم حاسبة تُجري عليك الحساب.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>ما التركة؟</h3>
+            <p><strong>لغةً:</strong> من «ترك»، والأشياء التي يتركها الإنسان بعد وفاته. <strong>اصطلاحاً:</strong> كل ما يتركه الميت من أموال.</p>
+            <p>وتتكوّن من <strong>الأموال</strong> — أصولاً كالمباني والحدائق والمصانع والأراضي، ومنقولاتٍ كالثمار والدراهم وعروض التجارة والأثاث والحيوان والسيارات والسيولة — و<strong>المنافع</strong> كإيجار العقارات وثمار المزروعات وسائر الحقوق من ديون ورهن وشُفعة وارتفاق واستسقاء.</p>
+            <p class="muted">فإذا مات إنسان وله حقّ انتفاعٍ بمدةٍ محددة ومات قبل انتهائها، انتقلت المنفعة إلى كل من له حقّ في التركة. وإذا كان هو المؤجِّر انتفع الورثة بالعوائد إلى انتهاء العقد ثم يرجع الأصل إليهم.</p>
+          </div>
+          <div class="card">
+            <h3>لماذا تحتاج التركة إلى تصفية؟</h3>
+            <ul class="check-list">
+              <li>لأن أموال الميت قد اختلطت بأموال ورثته أو شركائه أو زوجته؛ فلا بدّ من فرزها بالدليل والكتابة.</li>
+              <li>لأن لكل حقٍّ مرتبةً لا تُجاوز: تجهيزٌ، ديونٌ، وصيّةٌ، ثم ميراث.</li>
+              <li>لأن الديون قد تُحيط بالتركة، فتُقسَم بين الدائنين بالمحاصصة ولا يرث الورثة شيئاً.</li>
+              <li>لأن الوصية النافلة من الثلث فقط، والواجبات من أصل المال؛ والخلط بينهما ظلمٌ لأحد الطرفين.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">أداة تفاعلية</span><h2>حاسبة تصفية التركة</h2></div><span class="counter">تجريبية · تعليمية</span></div>
+        <div class="card calculator">
+          <div class="calc-toolbar">
+            <button class="btn btn-ghost btn-sm" id="calcExample">📌 تحميل المثال الكتابي</button>
+            <button class="btn btn-ghost btn-sm" id="calcReset">↺ إعادة ضبط</button>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-block">
+              <div class="calc-block-head"><h3>١ · جرد التركة</h3><button class="add-btn" data-add="assets" title="إضافة صنف">＋</button></div>
+              <div id="calcAssets" class="rows"></div>
+              <div class="calc-total">إجمالي التركة: <strong id="assetsTotal">٠ دج</strong></div>
+            </div>
+            <div class="calc-block">
+              <div class="calc-block-head"><h3>٢ · التجهيز والديون</h3><button class="add-btn" data-add="debts" title="إضافة دين">＋</button></div>
+              <label class="inline-label">مصاريف التجهيز <input type="number" id="calcFuneral" min="0" step="1000" value="25000" inputmode="numeric"></label>
+              <div id="calcDebts" class="rows"></div>
+              <div class="calc-total">إجمالي الديون: <strong id="debtsTotal">٠ دج</strong></div>
+            </div>
+            <div class="calc-block">
+              <div class="calc-block-head"><h3>٣ · الوصايا الواجبة</h3><button class="add-btn" data-add="obligatory" title="إضافة وصية واجبة">＋</button></div>
+              <p class="hint">تُخرَج من أصل المال كالدَّين (حقوق الله والعباد ووصية الأقرب).</p>
+              <div id="calcObligatory" class="rows"></div>
+            </div>
+            <div class="calc-block">
+              <div class="calc-block-head"><h3>٤ · الوصايا النافلة</h3><button class="add-btn" data-add="voluntary" title="إضافة وصية نافلة">＋</button></div>
+              <p class="hint">نسب مئوية من الثلث، ومجموعها لا يتجاوز ١٠٠٪.</p>
+              <div id="calcVoluntary" class="rows"></div>
+              <div class="calc-total">المجموع: <strong id="volTotal">٠٪</strong></div>
+            </div>
+          </div>
+          <div class="action-row">
+            <button class="btn btn-primary" id="calcRun">احسب التصفية ✦</button>
+            <button class="btn btn-ghost" id="calcCopy">نسخ النتيجة</button>
+          </div>
+          <div id="calcResult" class="calc-result" aria-live="polite"></div>
+        </div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="mirath">← المواريث</button><button class="btn btn-primary" data-go="builder">المحور الأخير: صانع الوصيّة ←</button></div>
+      </section>
+
+      <!-- ================= 8. صانع الوصية ================= -->
+      <section class="page" id="builder">
+        <div class="page-head">
+          <span class="kicker">المحور الثامن · التطبيق العملي</span>
+          <h2>اصنع وصيّتك النموذجية</h2>
+          <p>خمس خطوات قصيرة تُخرج لك نصّاً منظّماً تحمله وتُشهد عليه، مع شهادة تخرّج.</p>
+        </div>
+
+        <div class="stepper" id="stepper">
+          <button class="step active" data-step="0"><span>١</span>المقدمة</button>
+          <button class="step" data-step="1"><span>٢</span>الروحية</button>
+          <button class="step" data-step="2"><span>٣</span>الواجبات</button>
+          <button class="step" data-step="3"><span>٤</span>النوافل</button>
+          <button class="step" data-step="4"><span>٥</span>المتمّمات</button>
+        </div>
+
+        <form class="card builder" id="willForm" autocomplete="off">
+          <div class="form-step active" data-step="0">
+            <h3>مقدمة الوصية</h3>
+            <div class="form-grid">
+              <label>الاسم الكامل <input name="fullName" placeholder="مثال: محمد بن أحمد فلان" required></label>
+              <label>تاريخ الميلاد <input name="birth" placeholder="يوم / شهر / سنة"></label>
+              <label>الحالة الصحية والعقلية <input name="health" placeholder="صحيح البدن والعقل، والحمد لله"></label>
+              <label>مكان الإقامة <input name="city" placeholder="المدينة / البلدية"></label>
+            </div>
+          </div>
+          <div class="form-step" data-step="1">
+            <h3>الوصية الروحية</h3>
+            <p class="hint">أوصِ عقبك وأهلك وإخوانك وأمّتك بكل ما تراه فيه الخير للعاجلة والآجلة.</p>
+            <textarea name="spiritual" rows="5">أوصي عقبي وأهلي وإخواني وأمتي بتقوى الله تعالى والاستقامة على دينه، وإقام الصلاة وإيتاء الزكاة، وطلب العلم النافع، والتمسّك بالأخلاق الفاضلة، والتراحم والتعاون على البر والتقوى، والبعد عن المعاصي والظلم. وأسأل الله أن يتوفّاني وأيّاهم على كلمة التوحيد، وأن يغفر لنا ولهم. والله تعالى أعلم.</textarea>
+          </div>
+          <div class="form-step" data-step="2">
+            <h3>الواجبات</h3>
+            <div class="form-grid">
+              <label class="full">حقوق الله والعباد التي تعلّقت بالذمّة <textarea name="debts" rows="3" placeholder="ديون، أمانات، زكاة، حج، كفّارات... من غير ذكر سبب الكفارة"></textarea></label>
+              <label>وصية الأقرب (نسبة مئوية من التركة) <input type="number" name="kinPercent" min="0" max="33" step="0.5" value="5" inputmode="decimal"></label>
+              <label>الأقارب المقصودون <input name="kinPeople" placeholder="أقاربي الذين لا يرثونني"></label>
+            </div>
+            <div class="mini-note">الواجبات تُخرَج من أصل المال قبل حساب الثلث. ووصية الأقرب عند الإباضية واجبةٌ أداءً لحقّ الرحم، ويُستحسن أن تكون من الأصول الأبقى كالأرض أو الدار.</div>
+          </div>
+          <div class="form-step" data-step="3">
+            <h3>النوافل والتطوعات</h3>
+            <div class="form-grid">
+              <label>صدقة جارية لمشروع خيري <input name="charity" placeholder="مسجد، مدرسة، تحفيظ قرآن، جمعية خيرية..."></label>
+              <label>نسبتها من التركة <input type="number" name="charityPercent" min="0" max="33" step="0.5" value="10" inputmode="decimal"></label>
+              <label>صدقات متيسّرة <input name="sadaqa" placeholder="للفقراء والمساكين وذوي الحاجة"></label>
+              <label>نسبتها <input type="number" name="sadaqaPercent" min="0" max="33" step="0.5" value="5" inputmode="decimal"></label>
+              <label class="full">وصايا متعارَفة (اختياري) <textarea name="custom" rows="2" placeholder="شاة الأعضاء، عشاء القرّاء، شاة القرعات..."></textarea></label>
+            </div>
+            <div class="mini-note" id="percentWarning">مجموع النوافل يجب ألا يتجاوز ٣٣٫٣٣٪ من التركة بعد الواجبات.</div>
+          </div>
+          <div class="form-step" data-step="4">
+            <h3>المتمّمات</h3>
+            <div class="form-grid">
+              <label>اسم وكيل الوصية <input name="agentName" placeholder="اسم من يستخلفه الموصي"></label>
+              <label>صفة الوكيل <select name="agentType"><option>تطوّعاً لله تعالى</option><option>بأجرةٍ محدَّدة</option></select></label>
+              <label>الأجرة إن وُجدت <input name="agentFee" placeholder="تُحدَّد قبل الشروع في العمل"></label>
+              <label>الشاهد الأول <input name="witness1" placeholder="اسم الشاهد العدل"></label>
+              <label>الشاهد الثاني <input name="witness2" placeholder="اسم الشاهد العدل"></label>
+              <label>تاريخ الوصية <input name="date" placeholder="يوم / شهر / سنة"></label>
+            </div>
+            <div class="mini-note">يُستحسن إمضاء الوكيل والشهود بعد الاطّلاع على الوصية، وإشهاد الورثة عليها وإعلامهم بها.</div>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn-ghost" id="prevStep">← السابق</button>
+            <span id="stepLabel">الخطوة ١ من ٥</span>
+            <button type="button" class="btn btn-primary" id="nextStep">التالي ←</button>
+          </div>
+        </form>
+
+        <div class="action-row center">
+          <button class="btn btn-primary btn-lg" id="genWill">✦ أنشئ وصيّتك وشهادة تخرّجك</button>
+          <button class="btn btn-ghost" id="clearWill">مسح المسوّدة</button>
+        </div>
+
+        <div id="willOutput" class="will-output" hidden></div>
+
+        <div class="notice">
+          <span class="notice-ico">✍️</span>
+          <div><strong>شهادة التخرّج</strong><p>تُمنح الشهادة بعد إنشاء الوصية واستكمال المحاور الثمانية. احتفظ بنسخة منها ومن نصّ الوصية، وراجع جهة التوثيق المختصّة لتصير الوصية قابلة للتنفيذ قانوناً.</p></div>
+        </div>
+        <div class="page-nav"><button class="btn btn-ghost" data-go="tafdiya">← تصفية التركات</button><button class="btn btn-primary" data-go="quiz">اختبر معرفتك ←</button></div>
+      </section>
+
+      <!-- ================= الاختبار ================= -->
+      <section class="page" id="quiz">
+        <div class="page-head">
+          <span class="kicker">أداة مساندة</span>
+          <h2>اختبار المعرفة</h2>
+          <p>ثمانية عشر سؤالاً من نصوص الكتاب، مع تعقيبٍ يوضّح كل إجابة.</p>
+        </div>
+        <div class="card quiz-intro" id="quizIntro">
+          <span class="quiz-emoji">🧠</span>
+          <h3>هل استوعبتَ المحاور؟</h3>
+          <p>الاختبار لا يشترط له وقت، ويمكن إعادته متى شئت. درجة النجاح ٧٠٪.</p>
+          <button class="btn btn-primary" id="quizStart">ابدأ الاختبار</button>
+        </div>
+        <div id="quizBox" hidden></div>
+      </section>
+
+      <!-- ================= المعجم ================= -->
+      <section class="page" id="glossary">
+        <div class="page-head">
+          <span class="kicker">أداة مساندة</span>
+          <h2>معجم المصطلحات</h2>
+          <p>مدخل سريع إلى المصطلحات الواردة في الكتاب.</p>
+        </div>
+        <div class="search-box"><span>🔍</span><input id="glossarySearch" type="search" placeholder="ابحث عن مصطلح..."></div>
+        <div class="glossary-grid" id="glossaryList"></div>
+      </section>
+
+      <!-- ================= عن الدورة ================= -->
+      <section class="page" id="about">
+        <div class="page-head">
+          <span class="kicker">التعريف بالمشروع</span>
+          <h2>عن الدورة والمصادر</h2>
         </div>
         <div class="card">
-          <h3>شروط الأهليّة المختصرة</h3>
-          <ul class="checklist styled">
-            <li>البلوغ والعقل، والقدرة على التصرّف</li>
-            <li>الأمانة والعدالة وحُسن السيرة</li>
-            <li>المعرفة بأمر الوصية وقبولُه لها</li>
-            <li>القدرة العملية على التنفيذ والسفر إن لزم</li>
-            <li>الخلوّ من مصلحة تعارض مع مصلحة الورثة</li>
-            <li>تسمية بديل عند تعذّر قيامه بالأمر</li>
-          </ul>
-          <small class="tiny">تفصيل شروط الولاية والوصاية مختلف اجتهاداً في المذهب الإباضي، ومُقيَّد بالقوانين المعتمدة محلياً؛ والله أعلم.</small>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>مهام الوكيل في الوثيقة</h3>
-        <div class="task-row">
-          <span>١</span><p>يستلم التركة ويجردها ويُثبتها</p>
-          <span>٢</span><p>يدفع ديون الله والعباد ويستبرئ ذمّة الميت</p>
-          <span>٣</span><p>يردّ الأمانات لأصحابها</p>
-          <span>٤</span><p>يصرف الوصايا من الثلث لغير الورثة</p>
-          <span>٥</span><p>يقسّم الباقي على الورثة ويُشهد على ذلك</p>
-          <span>٦</span><p>يُقدّم حساباً ختامياً ويحفظ الإبراءات</p>
-        </div>
-      </div>
-
-      <div class="card soft-card">
-        <h3>اختبار سريع: هل وكيلك مؤهّل؟</h3>
-        <div class="check-grid" id="agentChecklist"></div>
-        <div class="fit-result" id="agentResult">اختر ما ينطبق على وكيلك...</div>
-        <button class="btn btn-primary btn-sm" id="agentToBuilder">حدّد الوكيل في الوصية ←</button>
-      </div>
-
-      <div class="module-done">
-        <label class="check-line"><input type="checkbox" data-mod="5"><span>أنهيت المحور الخامس</span></label>
-        <button class="btn btn-primary btn-sm" data-go="builder">المحور السادس: التطبيق العملي ←</button>
-      </div>
-    </section>
-
-    <!-- ================= صانع الوصية ================= -->
-    <section class="page" id="builder">
-      <div class="page-head">
-        <span class="kicker">المحور السادس · تطبيق عملي</span>
-        <h2>صانع الوصيّة الشرعية</h2>
-        <p>نموذج للملأ، خطوة بخطوة، مع حفظ تلقائي على جهازك ومعاينة جاهزة للطباعة.</p>
-      </div>
-
-      <div class="builder-toolbar">
-        <div class="step-progress"><div class="step-fill" id="builderFill"></div></div>
-        <div class="step-dots" id="stepDots"></div>
-        <div class="builder-actions-top">
-          <button class="btn btn-tiny" id="demoFill">🪄 املأ مثالاً</button>
-          <button class="btn btn-tiny" id="resetWill">↺ إعادة ضبط</button>
-        </div>
-      </div>
-
-      <div class="card wizard" id="wizard">
-        <!-- 1 -->
-        <div class="wstep active" data-step="1">
-          <h3>١) بيانات المُوصي</h3>
-          <div class="form-grid">
-            <label>الاسم الكامل <span class="req">*</span><input id="wName" placeholder="مثال: محمد بن عبد الله"></label>
-            <label>مكان الإقامة<input id="wCity" placeholder="مثال: الجزائر العاصمة"></label>
-            <label>تاريخ الكتابة<input type="date" id="wDate"></label>
-            <label>الحالة عند الكتابة<select id="wCapacity"><option>أنا في كامل قواي العقلية والبدنية</option><option>أوصي في مرضي وأنا بكامل إدراكي</option></select></label>
+          <div class="about-grid">
+            <div><span>المدرسة</span><strong>مدرسة أبي سالم تجنيت</strong></div>
+            <div><span>المشروع</span><strong>مشروع رسوخ</strong></div>
+            <div><span>إخراج</span><strong>الأستاذ: ح قاسم بن ح عمر حاج امحمد</strong></div>
+            <div><span>المصدر الأساسي</span><strong>إطلالات على فقه التركات — إعداد الأستاذ إبراهيم بن عمر بورورو</strong></div>
+            <div><span>المنهج</span><strong>المذهب الإباضي</strong></div>
+            <div><span>الإصدار</span><strong>١٫٠٫٠ — يعمل دون اتصال</strong></div>
           </div>
-          <label class="check-line"><input type="checkbox" id="wVoluntary"><span>أقرّ بأنني كتبت هذه الوصية بإرادتي الحرة، دون إكراه</span></label>
         </div>
-
-        <!-- 2 -->
-        <div class="wstep" data-step="2">
-          <h3>٢) التركة والديون والحقوق</h3>
-          <div class="form-grid">
-            <label>تقدير التركة قبل الديون<input type="number" id="wEstate" min="0" placeholder="رقم تقريبي" inputmode="numeric"></label>
-            <label>العملة / الوحدة<input id="wCurrency" placeholder="دج / درهم / ..."></label>
-          </div>
-          <div class="repeater" id="debtList"></div>
-          <button class="btn btn-tiny" id="addDebt">+ أضف ديناً أو حقاً</button>
-          <label class="field-label">أمانات وودائع يجب ردّها<textarea id="wDeposits" rows="2" placeholder="مثال: وديعة عندفلان، رهن لدى...""></textarea></label>
-          <div class="mini-calc" id="debtCalc">أدخل التركة والديون لتظهر التركة الصافية والثلث.</div>
+        <div class="section-head"><div><span class="kicker">المراجع</span><h2>مصادر المحتوى</h2></div></div>
+        <div class="source-list" id="sourceList"></div>
+        <div class="notice">
+          <span class="notice-ico">⚠️</span>
+          <div><strong>إخلاء مسؤولية</strong><p>التطبيق مادةٌ تعليميةٌ تكوينية لا تُصدر فتوى، ولا تُغني عن استشارة عالمٍ ثقة أو جهة توثيق رسمية. الآيات والأحاديث مذكورة بلفظها المعتاد، ومع ذلك يُنصح بالرجوع إلى المصدر الأصلي عند الاستشهاد. والله تعالى أعلم.</p></div>
         </div>
+      </section>
 
-        <!-- 3 -->
-        <div class="wstep" data-step="3">
-          <h3>٣) الوصايا المالية</h3>
-          <div class="alert-line">⚖️ الوصية لغير الورثة من الثلث بعد الديون، والزيادة موقوفة على إجازة الورثة بعد الوفاة.</div>
-          <div class="repeater" id="willList"></div>
-          <button class="btn btn-tiny" id="addWill">+ أضف وصية</button>
-        </div>
+    </main>
+  </div>
 
-        <!-- 4 -->
-        <div class="wstep" data-step="4">
-          <h3>٤) الكفّارات والعبادات</h3>
-          <div class="quick-picks" id="kaffarPicks"></div>
-          <div class="repeater" id="kaffarList"></div>
-          <button class="btn btn-tiny" id="addKaffar">+ أضف كفّارة أو عبادة</button>
-          <label class="field-label">ملاحظات<ul></ul><textarea id="wWorshipNotes" rows="2" placeholder="مثال: قضاء أيام صيام، زكاة سنوات سابقة..."></textarea></label>
-        </div>
-
-        <!-- 5 -->
-        <div class="wstep" data-step="5">
-          <h3>٥) الوكيل والبديل</h3>
-          <div class="form-grid">
-            <label>اسم الوكيل<input id="wAgent" placeholder="الاسم الكامل"></label>
-            <label>صفته / صلة القرابة<input id="wAgentRel" placeholder="مثال: الأخ الأكبر"></label>
-            <label>رقم الهاتف أو البريد<input id="wAgentContact" placeholder="للتواصل"></label>
-            <label>الوكيل البديل<input id="wAgentBackup" placeholder="إن تعذّر الأول"></label>
-          </div>
-          <label class="check-line"><input type="checkbox" id="wAgentOk"><span>تحقّقتُ من بلوغه وعقله وأمانته وقبوله للوكالة</span></label>
-        </div>
-
-        <!-- 6 -->
-        <div class="wstep" data-step="6">
-          <h3>٦) الشهود والتوثيق</h3>
-          <div class="form-grid">
-            <label>الشاهد الأول<input id="wWitness1" placeholder="الاسم الكامل"></label>
-            <label>الشاهد الثاني<input id="wWitness2" placeholder="الاسم الكامل"></label>
-            <label>مكان التوثيق<input id="wNotary" placeholder="مكتب توثيق / محكمة / مسجد"></label>
-            <label>رقم الوثيقة أو المرجع<input id="wDocNo" placeholder="اختياري"></label>
-          </div>
-          <label class="check-line"><input type="checkbox" id="wReviewed"><span>سأعرض هذه الصيغة على عالم ثقة قبل التوقيع</span></label>
-          <label class="check-line"><input type="checkbox" id="wLegal"><span>سأوثّقها وفق الإجراءات القانونية المعتمدة محلياً</span></label>
-        </div>
-
-        <!-- 7 -->
-        <div class="wstep" data-step="7">
-          <h3>٧) المعاينة والتصدير</h3>
-          <div class="preview-toolbar">
-            <button class="btn btn-primary btn-sm" id="printWill">🖨️ طباعة الوصية</button>
-            <button class="btn btn-ghost btn-sm" id="downloadWill">⬇️ تحميل TXT</button>
-            <button class="btn btn-ghost btn-sm" id="copyWill">📋 نسخ النص</button>
-            <button class="btn btn-ghost btn-sm" id="exportJson">💾 حفظ نسخة JSON</button>
-            <button class="btn btn-ghost btn-sm" id="importJson">📂 استيراد نسخة</button>
-            <input type="file" id="importFile" accept="application/json" hidden>
-          </div>
-          <div class="paper" id="willPaper"></div>
-        </div>
-
-        <div class="wizard-nav">
-          <button class="btn btn-ghost" id="prevStep">← السابق</button>
-          <span id="stepLabel">الخطوة ١ من ٧</span>
-          <button class="btn btn-primary" id="nextStep">التالي ←</button>
-        </div>
-      </div>
-
-      <div class="notice small-notice"><span class="notice-ico">🔒</span><div><strong>خصوصيتك</strong><p>كل ما تدخله يُحفظ داخل متصفّحك فقط (localStorage). لا يُرسل إلى أي خادم، ويمكنك حذفه بزر «إعادة ضبط».</p></div></div>
-    </section>
-
-    <!-- ================= الاختبار ================= -->
-    <section class="page" id="quiz">
-      <div class="page-head">
-        <span class="kicker">تقويم ذاتي</span>
-        <h2>اختبار المعرفة</h2>
-        <p>١٢ سؤالاً قصيراً لتقيس فهمك لمحاور الدورة. أفضل نتيجة محفوظة على جهازك.</p>
-      </div>
-      <div class="quiz-top">
-        <div class="score-box"><span>أفضل نتيجة</span><strong id="bestScore">—</strong></div>
-        <div class="score-box"><span>أسئلة</span><strong>١٢</strong></div>
-        <button class="btn btn-primary btn-sm" id="submitQuiz">تصحيح الإجابات ✓</button>
-        <button class="btn btn-ghost btn-sm" id="resetQuiz">↺ إعادة المحاولة</button>
-      </div>
-      <div id="quizList"></div>
-      <div class="quiz-result" id="quizResult" hidden></div>
-    </section>
-
-    <!-- ================= المصطلحات ================= -->
-    <section class="page" id="glossary">
-      <div class="page-head">
-        <span class="kicker">مرجع سريع</span>
-        <h2>معجم المصطلحات</h2>
-        <p>ابحث عن مصطلح لعرض تعريفه المختصر.</p>
-      </div>
-      <div class="search-wrap"><span>🔍</span><input id="glossarySearch" placeholder="ابحث: وصية، ثلث، كفارة..."></div>
-      <div class="glossary-list" id="glossaryList"></div>
-    </section>
-
-    <!-- ================= عن الدورة ================= -->
-    <section class="page" id="about">
-      <div class="page-head">
-        <span class="kicker">تعريف</span>
-        <h2>عن الدورة والتطبيق</h2>
-      </div>
-      <div class="grid-2">
-        <div class="card">
-          <h3>الدورة التكوينية</h3>
-          <p class="lead">مشاركة في دورة تكوينية تطبيقية بعنوان «صياغة الوصيّة الشرعية» — <strong>مشروع رسوخ - مدرسة أبي سالم - العطف تجنينت</strong>.</p>
-          <p><strong>تقديم:</strong> الأستاذ حاج امحمد قاسم</p>
-          <ul class="checklist styled">
-            <li>المدخل التصوري للوصيّة</li>
-            <li>أحكام الوصيّة ومقاصدها الشرعية</li>
-            <li>الكفّارات: أنواعها وأحكامها</li>
-            <li>الحقوق والالتزامات المالية والشخصية</li>
-            <li>الوكيل وأهليته في تنفيذ الوصيّة</li>
-            <li>تطبيق عملي ونموذج للملأ</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>المصادر الفقهية المعتمدة (المذهب الإباضي)</h3>
-          <ul class="source-list">
-            <li>القرآن الكريم: البقرة ١٨٠ و١٩٦، النساء ٩٢، المائدة ٨٩، المجادلة ٣-٤</li>
-            <li>السنة: حديث كتابة الوصية وحديث سعد في الثلث (الصحيحان)، وحديث «لا وصية لوارث» (السنن)</li>
-            <li>«النيل وشفاء العليل» للإمام عبد العزيز الثميني، و«شرح النيل وشفاء العليل» للإمام محمد بن يوسف أطفيش — المرجع المعتمد في الفقه الإباضي</li>
-            <li>«مختصر البسيوي»، و«الإيضاح» للشماخي، و«الجامع» لابن بركة: في الوصايا والكفّارات</li>
-            <li>«قاموس الشريعة» للإمام السالمي، و«فتاوى الشيخ الخليلي»، و«المختصر المفيد في الكفارات» للمعتصم المعولي</li>
-            <li>«معجم مصطلحات الإباضية» و«القواعد الفقهية عند الإباضية» لضبط المصطلح والقاعدة</li>
-          </ul>
-          <div class="notice inline-notice"><span>⚠️</span><p>المادة تعليمية مُختصرة، ولا تُعدّ فتوى. عُرضت وفق المعتمد في المذهب الإباضي، مع التنبيه على مسائل الخلاف؛ والرجوع إلى عالم ثقة من أهل المذهب وتوثيق الوصية قانوناً هو الطريق الآمن. والله تعالى أعلم.</p></div>
-        </div>
-      </div>
-      <div class="card">
-        <h3>التطبيق التقني</h3>
-        <div class="tech-grid">
-          <div><span>📴</span><strong>يعمل دون إنترنت</strong><p>بعد أول فتح، تُخزَّن كل الملفات على الجهاز.</p></div>
-          <div><span>📲</span><strong>قابل للتثبيت</strong><p>أضف التطبيق إلى الشاشة الرئيسية من قائمة المتصفح أو زر تثبيت.</p></div>
-          <div><span>🖨️</span><strong>طباعة وتصدير</strong><p>وصي جاهز للطباعة، ونسخة نصية ونسخة JSON قابلة للاستيراد.</p></div>
-          <div><span>🔒</span><strong>بياناتك لك</strong><p>لا حسابات، لا خوادم، لا تتبّع؛ التخزين محلي بالكامل.</p></div>
-        </div>
-        <p class="version">الإصدار ١.٠ — مشروع رسوخ - مدرسة أبي سالم - العطف تجنينت</p>
-      </div>
-    </section>
-
-  </main>
-</div>
-
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<script src="js/data.js"></script>
-<script src="js/app.js"></script>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">يرجى تفعيل JavaScript لاستخدام التطبيق التفاعلي.</div></noscript>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
